@@ -6,4 +6,4 @@ If you want to be able to code easy and veiw the code i reccomend downlading vis
 
 Use the Inital.css File to add the css of the webpage "colors and effects"
 
-Use the Java file to add Java to the webpage
+Use the script.js file to add Javascript to the webpage (dynamics)
