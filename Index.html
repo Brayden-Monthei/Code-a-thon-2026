@@ -1,5 +1,46 @@
 <html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code a thon</title>
+    <link rel="stylesheet" href="initial.css">
+  </head>
 
-<p>This Will be the Html File </p>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="title">
+          <h1>Block Party!</h1>
+          <h2>The biggest party of the year</h2>
+        </div>
+      </section>
+
+      <section class="box">
+        <h3>Welcome</h3>
+        <p>Scroll down to see the party vibes appear in clean white boxes.</p>
+      </section>
+
+      <section class="box">
+        <h3>More Info</h3>
+        <p>Use these panels to show event details, schedule, or highlights.</p>
+      </section>
+
+      <section class="box">
+        <h3>Get Involved</h3>
+        <p>Put links, signup forms, or a countdown here.</p>
+      </section>
+    </main>
+
+    <script>
+      // Wrap each H1 letter in a span so the CSS can style each character.
+      const title = document.querySelector('.title h1');
+      if (title) {
+        title.innerHTML = title.textContent
+          .split('')
+          .map((char, index) => `<span style="animation-delay:${(index * 0.1).toFixed(2)}s">${char}</span>`)
+          .join('');
+      }
+    </script>
+  </body>
 
 </html>
